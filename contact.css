@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s ease-in-out;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin: 0 45px;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+nav li{
+    margin-right: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+.menu{
+    display: none;
+}
+header {
+    background-color: orangered;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Form Section */
+.contact-form-container {
+    margin-top: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: rgb(244, 75, 13);
+    outline: none;
+}
+
+.contact-form button.submit-btn {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: rgb(243, 93, 38);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+.footer-img img{
+    width: 125px;
+}
+.footer-1{
+    line-height: 30px;
+    margin-right: 40px;
+}
+.footer-1 h4{
+    color: white;
+}
+.footer-1 p{
+    color: #999;
+}
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 40px;
+}
+.footer-2 img{
+    width: 200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.red{
+    line-height: 25px;
+    color: #999;
+}
+.footer-3 p{
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+.footer-3 li:hover{
+    color: white;
+}
+.footer-3 ul{
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+    list-style-type: none;
+}
+.info{
+    background-color: black;
+}
+.last-container{
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    font-size: 20px;
+    padding: 15px 0;
+    border-bottom: 70;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 2px #d5d5d5;
+}
+@media (max-width: 800px) {
+    body{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar-links{
+      display: none;
+    }
+    nav ul{
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: black;
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    nav li{
+        padding: 20px;
+    }
+    nav a{
+        color: white;
+        font-size: 18px;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .col-2{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-1, .footer-2, .footer-3{
+        flex-basis: 40%;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: start;
+    }
+}
